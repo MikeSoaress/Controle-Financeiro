@@ -1,0 +1,71 @@
+.corpo
+{
+    padding-top: 24px;
+    padding-bottom: 120px;
+    min-height: 100vh;
+}
+
+header
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 10;
+}
+
+.card-title
+{
+    border-bottom: solid 1px #000000;
+    border-radius: 8px;
+}
+
+.card-content
+{
+    padding: 9px;
+}
+
+.card-btn
+{
+    position: relative;
+    top: 19px;
+    right: 23px;
+}
+
+.card-img
+{
+    border-bottom: solid 1px #480676;
+    padding: 6px;
+    width: 20%!important;
+    margin-bottom: 13px;
+}
+
+.h-0
+{
+    height: 0px;
+}
+
+.ff-Awesome
+{
+    font-family: FontAwesome;
+}
+
+.btn-add-categoria
+{
+    position: relative;
+    top: -39px;
+    right: 0px;
+}
+
+.btn-add-2
+{
+    position: relative;
+    top: -7px;
+    right: 0px;
+}
+
+.close
+{
+    border: none;
+    background-color: transparent;
+}

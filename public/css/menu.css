@@ -1,0 +1,39 @@
+.menu
+{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #e5e5e5;
+    height: 100px;
+}
+
+.menu-shaddow
+{
+    box-shadow: 0px -1px 0px 0px #3832321f;
+}
+
+.menu-icone
+{
+    width: 25px;
+}
+
+.active
+{
+    border-bottom: solid 1px #820ad1 !important;
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active
+{
+    border-color:transparent;
+}
+
+.pagina
+{
+    display: none;
+}
+
+.activate
+{
+    display: inherit;
+}

@@ -1,0 +1,20 @@
+.bg-pourple
+{
+    background: rgb(130, 10, 209);
+}
+
+.bg-white-light
+{
+    background-color: #ffffff5e !important;
+}
+
+.bg-gray
+{
+    background-color: #e5e5e5;
+    color: black !important;
+}
+
+.color-gray
+{
+    color: #3a3a3a;
+}
