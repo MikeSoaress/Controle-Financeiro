@@ -37,11 +37,6 @@ function editTitle(id_item_activate)
     div_title.innerText = chr_title;
 }
 
-function editTypeCategory(type)
-{
-    document.getElementById('type').value = type;
-}
-
 function redirect(url)
 {
     location.href= "#" + url;

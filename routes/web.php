@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\InputController;
+use App\Http\Controllers\SpentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,4 +17,14 @@ use App\Http\Controllers\CategoryController;
 */
 
 Route::get('/', [IndexController::class, 'index']);
+
 Route::post('/add-categoria', [CategoryController::class, 'store']);
+Route::post('/update-categoria', [CategoryController::class, 'update']);
+
+Route::post('/add-entrada', [InputController::class, 'store']);
+Route::post('/update-entrada', [InputController::class, 'update']);
+Route::post('/delete-entrada', [InputController::class, 'delete']);
+
+Route::post('/add-spent', [SpentController::class, 'store']);
+Route::post('/update-spent', [SpentController::class, 'update']);
+Route::post('/delete-spent', [SpentController::class, 'delete']);

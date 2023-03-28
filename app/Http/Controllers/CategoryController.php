@@ -15,4 +15,13 @@ class CategoryController extends Controller
         $categoria->save();
         return redirect('/#categorias');
     }  
+
+    public function update(Request $request)
+    {
+        $categoria = new Categories();
+        $categoria = $categoria->find($request->id_categoria_update);
+        $categoria->legend = $request->legend_categoria_update;
+        $categoria->save();       
+        return redirect('/#categorias');
+    }
 }
