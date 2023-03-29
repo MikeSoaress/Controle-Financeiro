@@ -10,24 +10,24 @@
                 <div class="col-12">   
                     <img class="card-img" src="images/img-ganho.png" alt="Card image cap">
                     <h5 class="card-title p-1">Entradas</h5>
-                    <h4 class="card-content">R$3500,00</h4>                                                   
+                    <h4 class="card-content">{{$inputs_mensais}}</h4>                                                   
                 </div>                           
             </div> 
             <div class="text-end h-0">
-                <button type="button" class="btn bg-gray card-btn " data-toggle="modal" data-target="#RemoveModal">+</button>                          
+                <button type="button" class="btn bg-gray card-btn" data-toggle="modal" data-target="#AddSaidaModal">+</button><br>                             
             </div>
             <div class="row m-2 p-4 bg-white-light shadow-sm" onclick="redirect('saidas')">
                 <div class="col-12">
                     <img class="card-img" src="images/img-gasto.png" alt="Card image cap">
                     <h5 class="card-title p-1">Saídas</h5>
-                    <h4 class="card-content">R$1800,00</h4>                                                       
+                    <h4 class="card-content">{{$spents_mensais}}</h4>                                                       
                 </div>
             </div> 
             <div class="row m-2 p-4">
                 <div class="col-12">
                     <img class="card-img" src="images/img-saldo.png" alt="Card image cap">
                     <h5 class="card-title p-1">Saldo</h5>
-                    <h4 class="card-content">R$1700,00</h4>                                                     
+                    <h4 class="card-content">{{$saldo_mensal}}</h4>                                                     
                 </div>
             </div> 
         </div>
