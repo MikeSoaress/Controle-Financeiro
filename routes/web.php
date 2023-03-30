@@ -18,13 +18,13 @@ use App\Http\Controllers\SpentController;
 
 Route::get('/', [IndexController::class, 'index']);
 
-Route::post('/add-categoria', [CategoryController::class, 'store']);
-Route::post('/update-categoria', [CategoryController::class, 'update']);
+Route::post('/insert-category', [CategoryController::class, 'store']);
+Route::post('/update-category', [CategoryController::class, 'update']);
 
-Route::post('/add-entrada', [InputController::class, 'store']);
-Route::post('/update-entrada', [InputController::class, 'update']);
-Route::post('/delete-entrada', [InputController::class, 'delete']);
+Route::post('/insert-input', [InputController::class, 'store']);
+Route::post('/update-input', [InputController::class, 'update']);
+Route::post('/delete-input', [InputController::class, 'delete']);
 
-Route::post('/add-spent', [SpentController::class, 'store']);
+Route::post('/insert-spent', [SpentController::class, 'store']);
 Route::post('/update-spent', [SpentController::class, 'update']);
 Route::post('/delete-spent', [SpentController::class, 'delete']);

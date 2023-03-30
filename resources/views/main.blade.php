@@ -70,5 +70,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script></body>       
         <script src="{{ asset('js/menu.js') }}"></script>   
         <script src="{{ asset('js/script.js') }}"></script>
+        <script src="{{ asset('js/modal-inputs.js') }}"></script>
+        <script src="{{ asset('js/modal-spents.js') }}"></script>
+        <script src="{{ asset('js/modal-categories.js') }}"></script>
     </body>
 </html>

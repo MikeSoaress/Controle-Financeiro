@@ -10,8 +10,8 @@ class SpentController extends Controller
     public function store(Request $request)
     {
         $spent = new Spents;
-        $spent->value = $request->value_saida;
-        $spent->id_categoria = $request->id_category_spent_saida;
+        $spent->value = $request->value_spent;
+        $spent->id_categoria = $request->id_category_spent;
         $spent->save();
         return redirect('/#saidas');
     }  
@@ -19,10 +19,9 @@ class SpentController extends Controller
     public function update(Request $request)
     {
         $spent = new Spents();
-        $spent = $spent->find($request->id_spent_update);
-        $spent->value = $request->value_spent_update;
-        $spent->id_categoria = $request->id_categoria_spent_update;
-        echo($spent->id_categoria = $request->id_categoria_spent_update);
+        $spent = $spent->find($request->id_spent);
+        $spent->value = $request->value_spent;
+        $spent->id_categoria = $request->id_category_spent;
         $spent->save();       
         return redirect('/#saidas');
     }
@@ -30,7 +29,7 @@ class SpentController extends Controller
     public function delete(Request $request)
     {
         $spent = new Spents();
-        $spent = $spent->find($request->id_spent_delete);
+        $spent = $spent->find($request->id_spent);
         $spent->delete();       
         return redirect('/#saidas');
     }
